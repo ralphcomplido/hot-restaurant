@@ -16,7 +16,7 @@ app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
 
-var reservation = [
+var tables = [
 
 {
 
@@ -47,7 +47,7 @@ app.get("/reservation", function(req, res) {
   res.sendFile(path.join(__dirname, "reservation.html"));
    
 });
-app.get("/api/:waitlist?", function(req, res) {
+app.get("/api/waitlist", function(req, res) {
 res.json(waitlist);
     
 });
@@ -55,4 +55,8 @@ res.json(waitlist);
 app.get("/table", function(req, res) {
 	  res.sendFile(path.join(__dirname, "table.html"));
  
+});
+
+app.get("/api/tables", function(req, res) {
+res.json(tables);
 });

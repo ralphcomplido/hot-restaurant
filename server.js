@@ -21,9 +21,9 @@ var reservation = [
 {
 
 	name: "Jane Smith",
-	phone number: "555-555-5555",
+	phoneNumber: "555-555-5555",
 	email: "ghewje@gmail.com",
-	unique id: "0807115"
+	uniqueId: "0807115"
 
 }];
 
@@ -32,13 +32,9 @@ var waitlist = [
 {
 
 	name: "Jane Smith",
-	phone number: "555-555-5555",
+	phoneNumber: "555-555-5555",
 	email: "ghewje@gmail.com",
-	unique id: "0807115"
-
-}
-
-
+	uniqueId: "0807115"
 
 }];
 

@@ -47,7 +47,7 @@ app.get("/reservation", function(req, res) {
   res.sendFile(path.join(__dirname, "reservation.html"));
    
 });
-app.get("/waitlist", function(req, res) {
+app.get("/api/:waitlist?", function(req, res) {
 res.json(waitlist);
     
 });

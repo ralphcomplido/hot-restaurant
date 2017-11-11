@@ -15,3 +15,48 @@ app.use(bodyParser.json());
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
+
+var reservation = [
+
+{
+
+	name: "Jane Smith",
+	phone number: "555-555-5555",
+	email: "ghewje@gmail.com",
+	unique id: "0807115"
+
+}];
+
+var waitlist = [
+
+{
+
+	name: "Jane Smith",
+	phone number: "555-555-5555",
+	email: "ghewje@gmail.com",
+	unique id: "0807115"
+
+}
+
+
+
+}];
+
+
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "main.html"));
+});
+
+app.get("/reservation", function(req, res) {
+  res.sendFile(path.join(__dirname, "reservation.html"));
+   
+});
+app.get("/waitlist", function(req, res) {
+res.json(waitlist);
+    
+});
+// Get all characters
+app.get("/table", function(req, res) {
+	  res.sendFile(path.join(__dirname, "table.html"));
+ 
+});
